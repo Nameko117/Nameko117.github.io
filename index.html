@@ -1,37 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>入口網頁</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    
+<meta charset="UTF-8" />
+<title>我的書架</title>
+<style>
+body {
+    background: #121212;
+    color: #eee;
+    font-family: sans-serif;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+a {
+    color: #66ccff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+</style>
 </head>
 <body>
-    <h1>歡迎來到我的入口網頁</h1>
-    
-    <label for="username">輸入用戶名稱：</label>
-    <input type="text" id="username" name="username">
-    <button id="login">登入</button>
-    <p><a href="Corundum_Demo/">Corundum_Demo</a></p>
+<h1>📚 我的書架</h1>
+<ul>
+<li><a href="src/天澤時若《帶着作弊碼穿游戲》.html" target="_blank">天澤時若《帶着作弊碼穿游戲》</a></li>
+<li><a href="src/天澤時若《帶着偵探系統穿武俠》.html" target="_blank">天澤時若《帶着偵探系統穿武俠》</a></li>
 
-    <script>
-        // 獲取用戶名稱輸入框和登入按鈕的元素
-        var usernameInput = document.getElementById("username");
-        var loginButton = document.getElementById("login");
-
-        // 登入按鈕的點擊事件處理程序
-        loginButton.addEventListener("click", function () {
-            var username = usernameInput.value;
-            if (username) {
-                // 儲存用戶名稱到本地存儲
-                localStorage.setItem("username", username);
-                // 跳轉到計數器網頁
-                window.location.href = "counter.html";
-            } else {
-                alert("請輸入用戶名稱。");
-            }
-        });
-    </script>
+</ul>
 </body>
 </html>
