@@ -12,7 +12,17 @@ body {
 }
 h1 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+}
+#search {
+    display: block;
+    margin: 0 auto 20px auto;
+    padding: 10px;
+    width: 90%;
+    max-width: 500px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
 }
 ul {
     list-style: none;
@@ -35,7 +45,8 @@ a:hover {
 </head>
 <body>
 <h1>📚 我的書架</h1>
-<ul>
+<input type="text" id="search" placeholder="🔍 搜尋書名..." onkeyup="filterBooks()" />
+<ul id="book-list">
 <li><a href="src/天澤時若《二分之一劇透》.html" target="_blank">天澤時若《二分之一劇透》</a></li>
 <li><a href="src/天澤時若《天賦是卡牌培育》.html" target="_blank">天澤時若《天賦是卡牌培育》</a></li>
 <li><a href="src/天澤時若《帶着作弊碼穿游戲》.html" target="_blank">天澤時若《帶着作弊碼穿游戲》</a></li>
@@ -55,7 +66,33 @@ a:hover {
 <li><a href="src/薩巫《我靠游戲召喚成為怪物之母》.html" target="_blank">薩巫《我靠游戲召喚成為怪物之母》</a></li>
 <li><a href="src/薩巫《神不在乎》.html" target="_blank">薩巫《神不在乎》</a></li>
 <li><a href="src/薩巫《這不是釣魚游戲嗎》.html" target="_blank">薩巫《這不是釣魚游戲嗎》</a></li>
-
+<li><a href="src/輕雲淡《我在詭異世界當鹹魚》.html" target="_blank">輕雲淡《我在詭異世界當鹹魚》</a></li>
+<li><a href="src/輕雲淡《末日領主》.html" target="_blank">輕雲淡《末日領主》</a></li>
+<li><a href="src/輕雲淡《無限副本》.html" target="_blank">輕雲淡《無限副本》</a></li>
+<li><a href="src/輕雲淡《無限塔防》.html" target="_blank">輕雲淡《無限塔防》</a></li>
+<li><a href="src/輕雲淡《無限建城》.html" target="_blank">輕雲淡《無限建城》</a></li>
+<li><a href="src/輕雲淡《無限求生》.html" target="_blank">輕雲淡《無限求生》</a></li>
+<li><a href="src/輕雲淡《無限生存游戲》.html" target="_blank">輕雲淡《無限生存游戲》</a></li>
+<li><a href="src/輕雲淡《無限破産危機》.html" target="_blank">輕雲淡《無限破産危機》</a></li>
+<li><a href="src/輕雲淡《獨身男女》.html" target="_blank">輕雲淡《獨身男女》</a></li>
 </ul>
+<script>
+function filterBooks() {
+    const input = document.getElementById("search");
+    const filter = input.value.toLowerCase();
+    const ul = document.getElementById("book-list");
+    const li = ul.getElementsByTagName("li");
+
+    for (let i = 0; i < li.length; i++) {
+        const a = li[i].getElementsByTagName("a")[0];
+        const txtValue = a.textContent || a.innerText;
+        if (txtValue.toLowerCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
 </body>
 </html>
