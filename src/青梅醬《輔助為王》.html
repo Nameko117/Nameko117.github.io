@@ -2,49 +2,82 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
-<title>輔助為王</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>青梅醬《輔助為王》</title>
 <style>
 body {
     background-color: #1e1e1e;
     color: #f0f0f0;
     font-family: sans-serif;
-    font-size: 16px;
-    padding: 20px;
+    font-size: 1rem;
+    padding: 1.25rem;
     margin: 0;
 }
+
 .chapter {
     display: none;
 }
+
 #menu {
     display: none;
 }
+
 nav {
-    margin: 20px 0;
+    margin: 1rem 0;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
 }
+
 button {
-    margin: 0 5px;
-    padding: 5px 10px;
+    padding: 0.5rem 1rem;
     background: #333;
     color: white;
     border: 1px solid #555;
     cursor: pointer;
-    font-size: 14px;
-    border-radius: 3px;
+    font-size: 1rem;
+    border-radius: 0.3rem;
 }
+
 button:hover {
     background: #555;
 }
+
 a {
     color: #66ccff;
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
 }
+
 pre.content {
     white-space: pre-wrap;
-    line-height: 1.5;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 0.6rem 1rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    pre.content {
+        font-size: 1.05rem;
+    }
 }
 </style>
 <script>
@@ -227,21 +260,6 @@ window.addEventListener("DOMContentLoaded", loadFromHash);
 <li><a href="#118">第118章</a></li>
 <li><a href="#119">第119章</a></li>
 <li><a href="#120">第120章</a></li>
-<li><a href="#121">第121章</a></li>
-<li><a href="#122">第122章</a></li>
-<li><a href="#123">第123章</a></li>
-<li><a href="#124">第124章</a></li>
-<li><a href="#125">第125章</a></li>
-<li><a href="#126">第126章</a></li>
-<li><a href="#127">第127章</a></li>
-<li><a href="#128">第128章</a></li>
-<li><a href="#129">第129章</a></li>
-<li><a href="#130">第130章</a></li>
-<li><a href="#131">第131章</a></li>
-<li><a href="#132">第132章</a></li>
-<li><a href="#133">第133章</a></li>
-<li><a href="#134">第134章</a></li>
-<li><a href="#135">第135章</a></li>
 </ul>
 </div>
 <div id="chapter_1" class="chapter">
@@ -13670,7 +13688,7 @@ boss擊殺的瞬間，八進四半決賽的上半場自此正式結束。
 <nav>
 <button onclick="prevChapter()" >⬅️ 上一章</button>
 <button onclick="toChapter(0)">📚 目錄</button>
-<button onclick="nextChapter()" >下一章 ➡️</button>
+<button onclick="nextChapter()" disabled>下一章 ➡️</button>
 <button onclick="changeFontSize(2)">A+</button>
 <button onclick="changeFontSize(-2)">A-</button>
 </nav>
@@ -15323,6 +15341,16 @@ PS.還是得吐槽一下,這就是所謂的名人效應嗎，我真的很想過�
 俯身，留下了一個更加深長的吻：“好。”
 【全文番外部分完】
 本站無彈出廣告</pre>
+<nav>
+<button onclick="prevChapter()" >⬅️ 上一章</button>
+<button onclick="toChapter(0)">📚 目錄</button>
+<button onclick="nextChapter()" disabled>下一章 ➡️</button>
+<button onclick="changeFontSize(2)">A+</button>
+<button onclick="changeFontSize(-2)">A-</button>
+</nav>
+</div>
+</body>
+</html></pre>
 <nav>
 <button onclick="prevChapter()" >⬅️ 上一章</button>
 <button onclick="toChapter(0)">📚 目錄</button>

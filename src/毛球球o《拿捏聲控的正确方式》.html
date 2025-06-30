@@ -2,49 +2,82 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
-<title>拿捏聲控的正确方式</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>毛球球o《拿捏聲控的正确方式》</title>
 <style>
 body {
     background-color: #1e1e1e;
     color: #f0f0f0;
     font-family: sans-serif;
-    font-size: 16px;
-    padding: 20px;
+    font-size: 1rem;
+    padding: 1.25rem;
     margin: 0;
 }
+
 .chapter {
     display: none;
 }
+
 #menu {
     display: none;
 }
+
 nav {
-    margin: 20px 0;
+    margin: 1rem 0;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
 }
+
 button {
-    margin: 0 5px;
-    padding: 5px 10px;
+    padding: 0.5rem 1rem;
     background: #333;
     color: white;
     border: 1px solid #555;
     cursor: pointer;
-    font-size: 14px;
-    border-radius: 3px;
+    font-size: 1rem;
+    border-radius: 0.3rem;
 }
+
 button:hover {
     background: #555;
 }
+
 a {
     color: #66ccff;
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
 }
+
 pre.content {
     white-space: pre-wrap;
-    line-height: 1.5;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 0.6rem 1rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    pre.content {
+        font-size: 1.05rem;
+    }
 }
 </style>
 <script>
@@ -128,67 +161,6 @@ window.addEventListener("DOMContentLoaded", loadFromHash);
 <li><a href="#19">第19章 是聲控？</a></li>
 <li><a href="#20">第20章 偷聽</a></li>
 <li><a href="#21">第21章 999+</a></li>
-<li><a href="#22">第22章 不許睡</a></li>
-<li><a href="#23">第23章 今晚cos小狐貍</a></li>
-<li><a href="#24">第24章 想要嗎？（三章合一）</a></li>
-<li><a href="#25">第25章 哄睡</a></li>
-<li><a href="#26">第26章 連麥</a></li>
-<li><a href="#27">第27章 滿足你（二合一）</a></li>
-<li><a href="#28">第28章 師兄，我穿哪件好看</a></li>
-<li><a href="#29">第29章 喜歡什麽聲音</a></li>
-<li><a href="#30">第30章 你怎麽記仇</a></li>
-<li><a href="#31">第31章 由我來守護</a></li>
-<li><a href="#32">第32章 找到了，舒适區！</a></li>
-<li><a href="#33">第33章 睡前電話</a></li>
-<li><a href="#34">第34章 被喂飽了！</a></li>
-<li><a href="#35">第35章 看看尾巴</a></li>
-<li><a href="#36">第36章 很香</a></li>
-<li><a href="#37">第37章 我不幹淨了</a></li>
-<li><a href="#38">第38章 會熱吧？</a></li>
-<li><a href="#39">第39章 乖乖被我吃掉</a></li>
-<li><a href="#40">第40章 一起睡</a></li>
-<li><a href="#41">第41章 你，圖謀不軌！</a></li>
-<li><a href="#42">第42章 我喜歡你</a></li>
-<li><a href="#43">第43章 跟我談戀愛</a></li>
-<li><a href="#44">第44章 你喜歡冬季嗎？</a></li>
-<li><a href="#45">第45章 你是不是冬季的小雪花</a></li>
-<li><a href="#46">第46章 好玩嗎</a></li>
-<li><a href="#47">第47章 來我家</a></li>
-<li><a href="#48">第48章 你惹他幹嘛</a></li>
-<li><a href="#49">第49章 這姿勢是人能做到的嗎</a></li>
-<li><a href="#50">第50章 小兔尾巴</a></li>
-<li><a href="#51">第51章 可以跟你試試談戀愛</a></li>
-<li><a href="#52">第52章 男朋友</a></li>
-<li><a href="#53">第53章 睡前故事</a></li>
-<li><a href="#54">第54章 想咬你</a></li>
-<li><a href="#55">第55章 雪花給你的福利</a></li>
-<li><a href="#56">第56章 別吵啦</a></li>
-<li><a href="#57">第57章 初次見面</a></li>
-<li><a href="#58">第58章 怎麽還是你們？！</a></li>
-<li><a href="#59">第59章 你們……在哪裏開的組會？</a></li>
-<li><a href="#60">第60章 他們在漫展上幹了什麽！</a></li>
-<li><a href="#61">第61章 爸爸的爸爸叫什麽</a></li>
-<li><a href="#62">第62章 回國</a></li>
-<li><a href="#63">第63章 吻痕</a></li>
-<li><a href="#64">第64章 救命！</a></li>
-<li><a href="#65">第65章 好夢</a></li>
-<li><a href="#66">第66章 屬于我的證明</a></li>
-<li><a href="#67">第67章 番外1 在家長會上搞漫展</a></li>
-<li><a href="#68">第68章 番外2 出cos時被叫回學校開會</a></li>
-<li><a href="#69">第69章 番外2（2）磨磨你的爪子（少量論壇體）</a></li>
-<li><a href="#70">第70章 番外3 誤入直播畫面</a></li>
-<li><a href="#71">第71章 番外4 在直播間讀粉絲來信</a></li>
-<li><a href="#72">第72章 番外5 叫老公</a></li>
-<li><a href="#73">第73章 番外6 給雪花老師的配音教學</a></li>
-<li><a href="#74">第74章 番外6（2）再叫一次</a></li>
-<li><a href="#75">第75章 番外7 雪花教學（少量論壇體）</a></li>
-<li><a href="#76">第76章 番外7（2）見家長</a></li>
-<li><a href="#77">第77章 番外7（3）看男朋友配音的電影</a></li>
-<li><a href="#78">第78章 番外8 生日禮物</a></li>
-<li><a href="#79">第79章 番外8（2）你就是這麽照顧小師弟的</a></li>
-<li><a href="#80">第80章 番外8（3）發聲團子的正确使用方式</a></li>
-<li><a href="#81">第81章 番外8（4）很可口</a></li>
-<li><a href="#82">第82章 番外8（5）嫁給我</a></li>
 </ul>
 </div>
 <div id="chapter_1" class="chapter">
@@ -3452,7 +3424,7 @@ A大的路标，對外來者來說，确實不容易看。
 <nav>
 <button onclick="prevChapter()" >⬅️ 上一章</button>
 <button onclick="toChapter(0)">📚 目錄</button>
-<button onclick="nextChapter()" >下一章 ➡️</button>
+<button onclick="nextChapter()" disabled>下一章 ➡️</button>
 <button onclick="changeFontSize(2)">A+</button>
 <button onclick="changeFontSize(-2)">A-</button>
 </nav>
@@ -16423,6 +16395,16 @@ u市的老小區內，方知然的媽媽和小姨在x站看完了整場比賽的
 番外暫時到這裏啦，後邊申請給大家寫福利番外！
 家人們看看毛球的預收，看看毛球的專欄QAQ，然後，求個完結評分五星好評呀！初來乍到，感謝支持，毛球鞠躬！
 本站無彈出廣告</pre>
+<nav>
+<button onclick="prevChapter()" >⬅️ 上一章</button>
+<button onclick="toChapter(0)">📚 目錄</button>
+<button onclick="nextChapter()" disabled>下一章 ➡️</button>
+<button onclick="changeFontSize(2)">A+</button>
+<button onclick="changeFontSize(-2)">A-</button>
+</nav>
+</div>
+</body>
+</html></pre>
 <nav>
 <button onclick="prevChapter()" >⬅️ 上一章</button>
 <button onclick="toChapter(0)">📚 目錄</button>

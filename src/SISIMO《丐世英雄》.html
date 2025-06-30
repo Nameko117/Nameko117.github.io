@@ -2,49 +2,82 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
-<title>丐世英雄</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SISIMO《丐世英雄》</title>
 <style>
 body {
     background-color: #1e1e1e;
     color: #f0f0f0;
     font-family: sans-serif;
-    font-size: 16px;
-    padding: 20px;
+    font-size: 1rem;
+    padding: 1.25rem;
     margin: 0;
 }
+
 .chapter {
     display: none;
 }
+
 #menu {
     display: none;
 }
+
 nav {
-    margin: 20px 0;
+    margin: 1rem 0;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
 }
+
 button {
-    margin: 0 5px;
-    padding: 5px 10px;
+    padding: 0.5rem 1rem;
     background: #333;
     color: white;
     border: 1px solid #555;
     cursor: pointer;
-    font-size: 14px;
-    border-radius: 3px;
+    font-size: 1rem;
+    border-radius: 0.3rem;
 }
+
 button:hover {
     background: #555;
 }
+
 a {
     color: #66ccff;
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
 }
+
 pre.content {
     white-space: pre-wrap;
-    line-height: 1.5;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 0.6rem 1rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    pre.content {
+        font-size: 1.05rem;
+    }
 }
 </style>
 <script>
@@ -633,7 +666,7 @@ window.addEventListener("DOMContentLoaded", loadFromHash);
 蓋爾可沒有讀過這本書，他一點兒都不喜歡被這種“槍”抵住的感覺，于是，他以一種薇薇安幾乎看不清的動作直接一個左跳離開了之前的位置。
 薇薇安卻絲毫不亂，甚至是完全冷漠地無視了蓋爾，壓低了聲音，直接拿着光極指着範倫丁的腦袋，帶着嘲弄說，“別以為暗街是你們想來就來的地方，我不想和你們兜圈子！給我說實話！小子，就算你能逃開，這家夥不能吧？在我面前不要自作聰明！”
 蓋爾：“……”
-尼瑪，這也是一個幼稚殼子裏裝着非正常靈魂吧？鬼才相信她只有十三四歲！ +++++++++++++作者有話要說： 呃，這本書裏說的科學都是僞科學，咳咳，本人文科生，如果有BUG之類的，表當真~~o(&gt;_&lt;)o ~~
+尼瑪，這也是一個幼稚殼子裏裝着非正常靈魂吧？鬼才相信她只有十三四歲！ +++++++++++++作者有話要說： 呃，這本書裏說的科學都是僞科學，咳咳，本人文科生，如果有BUG之類的，表當真~~o(>_<)o ~~
 本站無彈出廣告</pre>
 <nav>
 <button onclick="prevChapter()" >⬅️ 上一章</button>
