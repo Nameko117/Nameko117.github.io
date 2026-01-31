@@ -1,0 +1,16 @@
+{
+    "name": "Nameko's BookShelf", // App 名稱，■■必填■■
+    "short_name": "NamekoBooks", // App 名稱縮寫，顯示空間不足時使用
+    "description": "小說備份，保持低調", // App 的描述
+    "start_url": ".", // 首頁路徑，依 manifest 檔案位置來看，■■必填■■
+    "display": "standalone", // 顯示模式，■■必填■■
+    "orientation": "portrait", // 定義預設的顯示方向
+    "background_color": "#5a0fc8", // 預設背景色
+    "icons": [ // 圖示，■■必填■■
+        {
+            "src": "neko.png", // 圖示路徑
+            "sizes": "192x192", // 圖示尺寸
+            "type": "image/png" // 圖示格式，可省略
+        }
+    ]
+}
