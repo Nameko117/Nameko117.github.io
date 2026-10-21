@@ -6,7 +6,7 @@ import os
 # 多本小說清單： (網址, 書名, 作者)
 novels = [
     # 半夏小說
-    ("https://www.banxia.la/books/269232.html", "玄學大師只想退圈", "廿亂"),
+    ("https://www.banxia.la/books/167095.html", "桃李滿園春", "SISIMO"),
 ]
 
 def get_chapter_links(toc_url):
